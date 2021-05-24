@@ -1,0 +1,343 @@
+/* **************通用样式 ********************/
+body{
+	color: black;
+	
+}
+a:hover{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p,span,a{
+	user-select: none;
+}
+/* **************通用样式 ********************/
+
+
+
+
+/* **************头部 begin ********************/
+#lk_header .top-bar{
+	height: 35px;
+	line-height: 34px;
+	border-bottom: 1px solid #00000050;
+	font-size: 12px;
+}
+/* #lk_header .top-bar .container .row>div{
+	border-left: .1px solid #00000050;
+} */
+#lk_header .top-bar .container .row .top-bar-1 a{
+	position: relative;
+}
+#lk_header .top-bar .container .row .top-bar-1 a img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all .5s ease;
+	top: 28px;
+	height: 0;
+	z-index: 99;
+}
+#lk_header .top-bar .container .row .top-bar-1 a:hover img{
+	height: 99.14px;
+}
+
+/* .fa-mobile-phone::before{
+	font-size: 25px;
+}
+.fa-phone-square::before{
+	font-size: 18px;
+} */
+.fa-shopping-cart::before{
+	font-size: 18px;
+}
+
+/* 导航 */
+#lk_header .navbar-lk{
+	border-bottom: 1px solid #e0e0e0;
+}
+#lk_header .navbar-lk .navbar-brand{
+	height: 50px;
+	margin-left: 1px;
+	margin-right: 119px;
+	align-items: center;
+}
+#lk_header .navbar-lk .navbar-brand img{
+	width: 55px;
+}
+/* 导航栏字体设置 */
+#lk_header .navbar-lk .navbar-nav>li>a{
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-right: 6px; */
+}
+#lk_header .navbar-lk .navbar-nav>li>a:hover{
+	border-bottom: 2px solid purple;
+}
+#lk_header .navbar-lk .form-inline input{
+	outline: none;
+}
+#lk_header .navbar-lk .form-inline input:hover{
+	border-color: skyblue;
+}
+
+/* **************头部 end ********************/
+/* --------------------小米闪购--------------- */
+#starGoods{
+	width:1226px;
+	height:400px;
+	margin:0 auto;
+}
+#starGoods .s_title{
+	height:55px;
+	width:100%;
+}
+#starGoods .s_title h2{
+	float:left;
+	line-height:55px;
+}
+h2{
+	font-weight:normal;
+	font-size:24px;
+}
+#starGoods .s_title .s_t_btn{
+	width:71px;
+	height:20px;
+	float:right;
+	margin-top:17px;
+}
+#starGoods .s_title .s_t_btn .s_t_b_left,#starGoods .s_title .s_t_btn .s_t_b_right{
+	width:35px;
+	line-height:20px;
+	float:left;
+	font-size:15px;
+	text-align:center;
+	color:#ccc;
+	cursor:default;
+}
+#starGoods .s_title .s_t_btn .s_t_b_left{
+	border-right:1px solid #bbb;
+}
+#starGoods .s_title .s_t_btn div.click{
+	color:#84b2e2;
+	cursor:pointer;
+	transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-o-transition:0.3s;
+}
+#starGoods .s_title .s_t_btn div.click:hover{
+	color:#f60;
+}
+#starGoods .s_goods{
+	width:1226px;
+	height:345px;
+	overflow:hidden;
+	position:relative;
+}
+#starGoods .s_goods .s_g_content{
+	width:1000%;
+	height:345px;
+}
+#starGoods .s_goods .s_g_content .s_g_c_list{
+	width:233px;
+	height:344px;
+	float:left;
+	margin-right:15px;
+	background:#FAFAFA;
+}
+#starGoods .s_goods .s_g_content .s_g_c_list .s_g_c_l_img,#starGoods .s_goods .s_g_content .s_g_c_list .s_g_c_l_title{
+	display:block;
+	text-align:center;
+}
+#starGoods .s_goods .s_g_content .s_g_c_list .s_g_c_l_img{
+	padding:35px;
+}
+#starGoods .s_goods .s_g_content .s_g_c_list .s_g_c_l_title{
+	font-size:14px;
+	color:#000;
+}
+#starGoods .s_goods .s_g_content .s_g_c_list .s_g_c_l_detail{
+	font-size:12px;
+	text-align:center;
+	color:#999;
+	margin:5px 0 13px 0;
+}
+#starGoods .s_goods .s_g_content .s_g_c_list .s_g_c_l_price{
+	font-size:12px;
+	text-align:center;
+	color:#f60;
+}
+/* ----------------------小米闪购end--------------------- */
+/* **************轮播图 begin ********************/
+#lk_carousel{
+	
+}
+#lk_carousel .carousel-item{
+	background: no-repeat center center;
+	/* 保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小。 */
+	-webkit-background-size:cover;
+	background-size: cover;
+}
+#lk_carousel .carousel-item img{
+	width: 100%;
+}
+/* -------------媒体查询-------------- */
+@media screen and (min-width:900px){
+	#lk_carousel .carousel-item{
+		height: 430px;
+	}
+}
+
+/* 电梯导航 */
+.fixtool{
+	position: fixed;
+	right: 0;
+	display: none;
+	top: 250px;
+	align-items: center;
+	z-index: 99;
+}
+.fixtool ul{
+	list-style: none;
+	padding: 0;
+}
+.fixtool ul li{
+	border: 3px solid #f5f5f5;
+	background-color: white;
+	height: 60px;
+	width: 100px;
+	line-height: 60px;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	border-bottom: none;
+	border-radius: 10%;
+}
+.fixtool .current{
+	background: linear-gradient(90deg,#84b2e2,#4ddcf1);
+	color: white;
+}
+/* -------------------tab菜单栏目------------------- */
+ /* .tab-title a{
+	display: block;
+	width: 200px;
+	height: 44px;
+	line-height: 44px;
+	background-color:#Fcf4f4; 
+	text-align: center;
+}
+.tab-title a:hover{
+	background-color: #fff;
+}
+.tab-headers{
+	position: relative;
+	margin-left: 330px;
+	margin-top: 20px;
+}  */
+.downtab-title .downtab{
+	position: absolute;
+	height: 230px;
+	width: 60%;
+	background-color: #fff;
+	z-index: 100;
+	display: none;
+}
+/* **************轮播图 end ********************/
+
+
+
+/* **************广告 begin ********************/
+#lk_hot{
+	
+}
+.g-cont img{
+	width: 100%;
+}
+#lk_hot .container .row .g-cont:hover{
+	 box-shadow: 0 15px 30px rgba(0, 0, 0,.1);
+
+}
+
+
+/* **************广告 end ********************/
+
+
+
+/* **************产品中兴 begin ********************/
+#lk_produce{
+	background-color: #f5f5f5;
+	padding: 30px 0;
+}
+#lk_produce .nav-item{
+	font-size: 18px;
+}
+#lk_produce .nav-item a{
+	color: black;
+	border: none;
+	padding: 10px 20px;
+}
+#lk_produce .nav-item a.active{
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid purple;
+	color: purple;
+
+}
+.tab-content{
+	padding-top: 20px;
+}
+/* **************产品中兴 end ********************/
+
+
+
+/* **************关于我们 begin ********************/
+#lk_about .col-xl-10 .lk_about_title_cont{
+	transition: all .2s linear;
+}
+#lk_about .col-xl-10 .lk_about_title_cont:hover{
+	box-shadow: 0 15px 30px rgba(0, 0, 0,.1);
+	transform: translate3d(0,-5px,0)
+}
+.lk_about_title>img{
+	transition: all .2s linear;
+}
+.lk_about_title>img:hover{
+	box-shadow: 0 15px 30px rgba(0, 0, 0,.1);
+	transform: translate3d(0,-5px,0)
+}
+
+/* **************关于我们 end ********************/
+
+
+
+/* **************友情链接 begin ********************/
+#lk_link{
+	
+}
+/* **************友情链接 end ********************/
+
+
+
+/* **************尾部 begin ********************/
+#lk_footer{
+	width: 100%;
+	height: 200px;
+	background: url("../img/footerbg.jpg") no-repeat center;
+	color: white;
+}
+#lk_footer .container .row{
+	height: 200px;
+}
+#lk_footer .container .row a{
+	color: white;
+}
+/* **************尾部 end ********************/
+
+
+/* *****************商品****************** */
